@@ -22,7 +22,7 @@
                                         class="text-decoration-none fw-bold fs-6 text-dark"><?php echo $p['displayname'] ?></a>
                                     <button class="btn btn-outline-primary ms-2 btn-sm">Follow +</button></span>
                                 <label for="Content"
-                                    class="text-secondary fs-6"><?php echo date('j M Y G:m',$p['timestamp']) ?></label>
+                                    class="text-secondary fs-6"><?php echo date('j M Y G:m',strtotime($p['timestamp'])) ?></label>
                             </div>
                         </div>
                         <div class="col-1 text-center fw-semibold">
