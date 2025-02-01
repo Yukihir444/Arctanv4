@@ -13,7 +13,7 @@
         
     <?php 
 
-$u=1;
+    $u = $_SESSION['target'];
     $stmt = $dbcon->prepare("SELECT * FROM playlist WHERE USERID = :u");
     $stmt->bindParam(":u", $user['USERID']);
     $stmt->execute();
@@ -31,7 +31,7 @@ $u=1;
         if(!$songlist){
             echo "somgthing went wrong";
         } else { 
-           
+            if($songlist !== 0){
             foreach($songlist as $pl){
                 ?>
                     <li class="list-group-item d-flex w-100 ">
@@ -49,7 +49,12 @@ $u=1;
                      </div>
                      </li>   
                         
-            <?php } ?>
+            <?php } 
+            }
+            else {
+                echo "No playlist yet";
+            }
+            ?>
             
         <?php
         }
