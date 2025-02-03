@@ -29,11 +29,20 @@
     }else{ ?>
 
 <body>
-    <?php include_once"nav.php"; ?>
+    <?php include_once"nav.php"; ?> 
 <div class="container-xxl bd-gutter mt-3 my-md-4">
     <div class="row">
+    <aside class=" bd-sidebar col-md-2 pe-4">
+            <div class="offcanvas-lg offcanvas-start">
+                <div class="offcanvas-body ">
+                    
+                            
+                </div>
+            </div>
+            <!-- <hr class="Dropdown-divider w-100"> -->
+        </aside>
                         <!---------------------------------------- Left side bar --------------------------------------------------------->
-        <aside class=" bd-sidebar col-md-2 pe-4">
+        <!-- <aside class=" bd-sidebar col-md-2 pe-4">
             <div class="offcanvas-lg offcanvas-start">
                 <div class="offcanvas-body ">
                     <form class="d-flex " action="?" method="get">
@@ -86,7 +95,7 @@
                 </div>
             </div>
             <hr class="Dropdown-divider w-100">
-        </aside>
+        </aside> -->
 
                                         <!------------------------------------- Main Content ------------------------------------------>
         <main class="bd-main order-1 col-md-10 ">

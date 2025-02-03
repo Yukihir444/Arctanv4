@@ -39,8 +39,8 @@
                                     <?php } ?>
                                     </span>
                                     <label for="Content" class="text-secondary ">
-                                        <a class="text-decoration-none text-secondary icon-link icon-link-hover" href="<?php echo $web."?search=".$target['position']."&type=position\">".$target['position'] ?> </a> . 
-                                        <a class="text-decoration-none text-secondary icon-link icon-link-hover" href="<?php echo $web."?search=".$target['band_name']."&type=band\">".$target['band_name'] ?></a> </label>
+                                        <a class="text-decoration-none text-secondary icon-link icon-link-hover" href="<?php echo $web ?>?search=<?php echo $target['position'] ?>&type=position"> <?php echo $target['position'] ?> </a> . 
+                                        <a class="text-decoration-none text-secondary icon-link icon-link-hover" href="<?php echo $web ?>?search=<?php echo $target['band_name'] ?> &type=band"> <?php echo $target['band_name'] ?></a> </label>
                                 </div>
                             </div>
                             

@@ -1,4 +1,4 @@
-<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark ">
+<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="mx-auto w-50">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse " id="navbarScroll">

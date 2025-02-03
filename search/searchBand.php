@@ -20,7 +20,7 @@
                         <div class="row "> 
                                 <div class="col-1 ">
                                     <a href="<?php echo $target['BANDID'] ?>" >
-                                    <img src="<?php echo $web."/assets/img/none.jpeg"; ?>" alt="" class="ratio-1x1 rounded-circle p-1 float-start " width="60px" height="60px">
+                                    <img src="<?php echo $web."assets/img/none.jpeg"; ?>" alt="" class="ratio-1x1 rounded-circle p-1 float-start " width="60px" height="60px">
                                     </a>
                                 </div>
                                 <div class="col ps-0 ">
