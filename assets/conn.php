@@ -1,5 +1,6 @@
-<?php
+<?php @session_start();
 $web = "http://localhost/Arctanv4/";
+$_SESSION['dir'] = $web;
 
 $servername = "localhost";
 $userName = "root";

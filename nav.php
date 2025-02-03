@@ -16,8 +16,11 @@
                     <div class="w-100">
                         <form class="d-flex w-100 ps-5"  method="get">
                             <input class="form-control me-2 fst-italic" type="search" placeholder="Find People in ARCTAN" aria-label="Search" name="search">
-                            <button class="btn btn-outline-success" type="submit" >Search</button>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
+                    </div>
+                    <div class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <a href="?action=clear" class="text-light mx-1 navbar-brand fs-6 icon-link icon-link-hover">CLEAR</a>
                     </div>
                 </div>
             </div>

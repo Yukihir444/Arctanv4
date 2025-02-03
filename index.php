@@ -1,21 +1,33 @@
 <?php @session_start(); 
-    include_once'assets/conn.php'; 
-    include'q.php';
-    unset($_SESSION['playlist']);
-    date_default_timezone_set('Asia/Bangkok');
-
-    
-
-?>
+        
+        include_once'assets/conn.php'; 
+        include'q.php';
+        unset($_SESSION['playlist']);
+        date_default_timezone_set('Asia/Bangkok');
+        
+        if(isset($_GET['action'])){
+            if($_GET['action']="clear"){
+            session_destroy();
+            header("Refresh:0;url=".$_SESSION['dir']);
+            }
+        }
+        
+        ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
-    <title>ARCTAN V4</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
+        <title>ARCTAN V4</title>
+    </head>
+
+    <?php
+    if(!$_SESSION['user']){
+        include_once 'test-authur.php';
+    }else{ ?>
+
 <body>
     <?php include_once"nav.php"; ?>
 <div class="container-xxl bd-gutter mt-3 my-md-4">
@@ -78,7 +90,7 @@
 
                                         <!------------------------------------- Main Content ------------------------------------------>
         <main class="bd-main order-1 col-md-10 ">
-            
+            <?php echo $_SESSION['user'] ?>
                 <!------------------------------ New -------------------------------------->
                 <?php include "condition.php"  ?>
 
@@ -88,3 +100,4 @@
 </body>
 
 </html>
+<?php } ?>
